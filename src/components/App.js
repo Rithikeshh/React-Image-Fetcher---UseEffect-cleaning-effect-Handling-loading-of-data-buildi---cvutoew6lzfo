@@ -1,12 +1,12 @@
-import {useState,useEffect} from 'react'
+import React from 'react'
 import '../styles/App.css';
 import { Loader } from './Loader';
 import { PhotoFrame } from './PhotoFrame';
 const App = () => {
-  const[id,setId] = useState(0);
-  const[photo,setPhoto] = useState('null');
+  const[id,setId] = React.useState(0);
+  const[photo,setPhoto] = React.useState('null');
   console.log(photo)
-  useEffect(()=>{
+  React.useEffect(()=>{
     if(id === 0) return;
     console.log("Hi Alok")
       setPhoto(null)
