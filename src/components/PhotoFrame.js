@@ -1,7 +1,7 @@
 import React from 'react';
 
 export const PhotoFrame = ({title,url}) => {
-   if(!title) return;
+   // if(!title) return;
   return(
     <div className="photoframe">
       <img src={url}/>
