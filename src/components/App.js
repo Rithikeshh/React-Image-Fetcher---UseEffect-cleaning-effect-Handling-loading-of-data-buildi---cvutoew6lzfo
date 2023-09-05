@@ -21,7 +21,8 @@ const App = () => {
       <input type="number" onChange={(event)=>{
         setId(event.target.value)
       }}/>
-      {photo ? <PhotoFrame title={photo.title} url={photo.url}/>  : <Loader/>}
+      {photo && <PhotoFrame title={photo.title} url={photo.url} />}
+      {id && !photo && <Loader/>}
     </div>
   );
 }
