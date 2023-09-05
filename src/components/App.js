@@ -4,7 +4,7 @@ import { Loader } from './Loader';
 import { PhotoFrame } from './PhotoFrame';
 const App = () => {
   const[id,setId] = React.useState(0);
-  const[photo,setPhoto] = React.useState('null');
+  const[photo,setPhoto] = React.useState('');
   console.log(photo)
   React.useEffect(()=>{
     if(id === 0) return;
