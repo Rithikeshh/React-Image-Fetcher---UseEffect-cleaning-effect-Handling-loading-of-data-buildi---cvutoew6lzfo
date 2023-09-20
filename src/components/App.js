@@ -3,8 +3,8 @@ import '../styles/App.css';
 import { Loader } from './Loader';
 import { PhotoFrame } from './PhotoFrame';
 const App = () => {
-  const[id,setId] = React.useState(0);
-  const[photo,setPhoto] = React.useState('');
+  const[id,setId] = React.useState(null);
+  const[photo,setPhoto] = React.useState(null);
   console.log(photo)
   React.useEffect(()=>{
     if(id === 0) return;
